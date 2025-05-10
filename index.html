@@ -15,7 +15,23 @@
         body {
             display: flex;
             flex-direction: column;
+            background-color: #f0f0f0;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        /* A4 container */
+        .cv-container {
+            width: 794px; /* A4 width in pixels */
+            max-width: 100%;
+            margin: 0 auto;
             background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            min-height: 1123px; /* A4 height in pixels */
         }
         
         .left-column {
@@ -182,15 +198,23 @@
             color: #f7931e;
         }
         
+        /* CV content layout */
+        .cv-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+        
         /* Responsive Design */
         @media (min-width: 768px) {
-            body {
+            .cv-content {
                 flex-direction: row;
             }
             
             .left-column {
-                width: 300px;
-                min-height: 100vh;
+                width: 260px;
+                height: 100%;
             }
             
             .right-column {
@@ -204,6 +228,10 @@
         }
         
         @media (max-width: 767px) {
+            .cv-container {
+                width: 100%;
+            }
+            
             .exp-header, .edu-header {
                 flex-direction: column;
             }
@@ -227,12 +255,14 @@
     </style>
 </head>
 <body>
-    <div class="left-column">
-        <div class="profile-section">
-            <img src="image.png" class="profile-img" alt="Võ Vinh Cơ">
-            <h1 class="name">Võ Vinh Cơ</h1>
-            <h2 class="job-title">Kỹ Thuật Viên</h2>
-        </div>
+    <div class="cv-container">
+        <div class="cv-content">
+            <div class="left-column">
+                <div class="profile-section">
+                    <img src="image.png" class="profile-img" alt="Võ Vinh Cơ">
+                    <h1 class="name">Võ Vinh Cơ</h1>
+                    <h2 class="job-title">Kỹ Thuật Viên</h2>
+                </div>
 
         <div class="personal-info">
             <h3 class="section-title">Thông tin cá nhân</h3>
@@ -269,7 +299,7 @@
                 <div class="skills-desc">Thiết kế giao diện HMI, truyền thông với PLC, đảm bảo điều khiển chính xác</div>
             </div>
             <div class="skills-item">
-                <div class="skills-title">Lập trình nhúng và các thiết bị IOT</div>
+                <div class="skills-title">Lập trình những và các thiết bị IOT</div>
                 <div class="skills-desc">Lập trình thu thập và truyền dữ liệu trong hệ thống công nghiệp.</div>
             </div>
         </div>
@@ -356,6 +386,8 @@
                 <li>Tiếng Anh giao tiếp trung bình</li>
                 <li>Thành thạo tin học văn phòng</li>
             </ul>
+        </div>
+    </div>
         </div>
     </div>
 </body>
