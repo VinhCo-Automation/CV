@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Võ Vinh Cơ - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+        }
+        
+        .left-column {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        
+        .right-column {
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            display: block;
+            border: 2px solid #444;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .name {
+            color: #f7931e;
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .job-title {
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        .section-title {
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f7931e;
+            padding-bottom: 5px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .right-section-title {
+            color: #f7931e;
+            text-transform: uppercase;
+            margin: 20px 0 10px;
+            border-bottom: 2px solid #f7931e;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .personal-info {
+            margin-bottom: 25px;
+        }
+        
+        .info-item {
+            display: flex;
+            margin-bottom: 10px;
+            align-items: flex-start;
+        }
+        
+        .info-icon {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background-color: #f7931e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        
+        .skills-item {
+            margin-bottom: 20px;
+        }
+        
+        .skills-title {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .skills-desc {
+            font-size: 14px;
+        }
+        
+        .exp-item, .edu-item {
+            margin-bottom: 20px;
+        }
+        
+        .exp-header, .edu-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+        }
+        
+        .exp-company {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .exp-duties {
+            list-style-type: none;
+        }
+        
+        .exp-duties li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .exp-duties li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #f7931e;
+        }
+        
+        .cert-item {
+            display: flex;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .cert-year {
+            width: 80px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .cert-link {
+            color: #f7931e;
+            text-decoration: none;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+        
+        .cert-link:hover {
+            text-decoration: underline;
+        }
+        
+        .additional-info li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .additional-info li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #f7931e;
+        }
+        
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            body {
+                flex-direction: row;
+            }
+            
+            .left-column {
+                width: 300px;
+                min-height: 100vh;
+            }
+            
+            .right-column {
+                flex: 1;
+                padding: 20px 30px;
+            }
+            
+            .name, .job-title {
+                text-align: left;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .exp-header, .edu-header {
+                flex-direction: column;
+            }
+            
+            .exp-header div, .edu-header div {
+                margin-bottom: 5px;
+            }
+            
+            .cert-item {
+                flex-direction: column;
+            }
+            
+            p, .skills-desc, .exp-duties li, .additional-info li {
+                font-size: 16px;
+            }
+            
+            .right-section-title {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="left-column">
+        <div class="profile-section">
+            <img src="image.png" class="profile-img" alt="Võ Vinh Cơ">
+            <h1 class="name">Võ Vinh Cơ</h1>
+            <h2 class="job-title">Kỹ Thuật Viên</h2>
+        </div>
+
+        <div class="personal-info">
+            <h3 class="section-title">Thông tin cá nhân</h3>
+            <div class="info-item">
+                <div class="info-icon">&#9742;</div>
+                <div>0789661260</div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">&#9993;</div>
+                <div>covo488@gmail.com</div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">&#127968;</div>
+                <div>Khu phố 6, Linh Trung, Thủ Đức, HCM</div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h3 class="section-title">Các kỹ năng</h3>
+            <div class="skills-item">
+                <div class="skills-title">Thiết kế mạch điện điều khiển</div>
+                <div class="skills-desc">Sử dụng phần mềm vẽ mạch (như AutoCAD Electrical, EPLAN Electric,...) để thiết kế sơ đồ nguyên lý và bố trí mạch điều khiển</div>
+            </div>
+            <div class="skills-item">
+                <div class="skills-title">Lắp đặt thiết bị theo bản vẽ</div>
+                <div class="skills-desc">Đọc hiểu bản vẽ kỹ thuật và lắp đặt thiết bị điều khiển, tủ điện, cảm biến... theo yêu cầu dự án</div>
+            </div>
+            <div class="skills-item">
+                <div class="skills-title">Lập trình PLC và các thiết bị điều khiển khác</div>
+                <div class="skills-desc">Lập trình các dòng PLC như Siemens, Mitsubishi, Wecon,... phục vụ điều khiển tự động hóa</div>
+            </div>
+            <div class="skills-item">
+                <div class="skills-title">Thiết kế HMI</div>
+                <div class="skills-desc">Thiết kế giao diện HMI, truyền thông với PLC, đảm bảo điều khiển chính xác</div>
+            </div>
+            <div class="skills-item">
+                <div class="skills-title">Lập trình những và các thiết bị IOT</div>
+                <div class="skills-desc">Lập trình thu thập và truyền dữ liệu trong hệ thống công nghiệp.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-column">
+        <div class="career-objective">
+            <h3 class="right-section-title">Mục tiêu nghề nghiệp</h3>
+            <p>Tìm kiếm cơ hội trong môi trường kỹ thuật chuyên nghiệp để vận dụng kiến thức về điện điều khiển, PLC, lập trình những, IoT vào các dự án tự động hóa. Sẵn sàng học hỏi và phát triển để trở thành kỹ sư tự động hóa, đóng góp vào hiệu quả hệ thống.</p>
+        </div>
+
+        <div class="experience">
+            <h3 class="right-section-title">Kinh nghiệm làm việc</h3>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>THỰC TẬP SINH KỸ THUẬT</div>
+                    <div>2023  -  2023</div>
+                </div>
+                <div class="exp-company">CÔNG TY TNHH THƯƠNG MẠI KỸ THUẬT LẠNH KHANG PHÁT</div>
+                <ul class="exp-duties">
+                    <li>Nghiên cứu và phát triển phần mềm hệ thống điều khiển tự động, đảm bảo đáp ứng yêu cầu kỹ thuật của dự án.</li>
+                    <li>Thực hiện lập trình và cấu hình các hệ thống điều khiển theo yêu cầu.</li>
+                </ul>
+            </div>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>THỰC TẬP SINH KỸ THUẬT</div>
+                    <div>2024  -  2024</div>
+                </div>
+                <div class="exp-company">CÔNG TY TNHH BACKER HEATING TECHNOLOGIES VIỆT NAM</div>
+                <ul class="exp-duties">
+                    <li>Chịu trách nhiệm bảo trì, sửa chữa và đảm bảo hoạt động ổn định của các thiết bị, máy móc trong khu vực sản xuất, giảm thiểu sự cố và tối ưu hóa hiệu suất làm việc.</li>
+                    <li>Nghiên cứu và cải tiến các thiết bị, máy móc hiện có, áp dụng các giải pháp kỹ thuật để nâng cao hiệu suất, độ bền và tiết kiệm năng lượng.</li>
+                    <li>Phối hợp với các bộ phận liên quan trong việc triển khai các dự án bảo trì định kỳ và nâng cấp thiết bị, đảm bảo tuân thủ các tiêu chuẩn chất lượng.</li>
+                    <li>Thực hiện các công tác kiểm tra, giám sát và phân tích các lỗi kỹ thuật, đưa ra giải pháp khắc phục kịp thời.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="education">
+            <h3 class="right-section-title">Học vấn</h3>
+            <div class="edu-item">
+                <div class="edu-header">
+                    <div>KỸ THUẬT ĐIỀU KHIỂN VÀ TỰ ĐỘNG HÓA</div>
+                    <div>2021  -  2025</div>
+                </div>
+                <div>Trường Đại học Nông Lâm TP.HCM</div>
+                <p>Tôi tập trung nghiên cứu chuyên môn và rèn luyện kỹ năng thực tế để nâng cao khả năng ứng dụng vào công việc.</p>
+            </div>
+        </div>
+
+        <div class="certifications">
+            <h3 class="right-section-title">Chứng chỉ</h3>
+            <div class="cert-item">
+                <div class="cert-year">2022</div>
+                <div>Khóa học lập trình C, C++ <a href="certificates.html" class="cert-link">[Xem chi tiết]</a></div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-year">2023</div>
+                <div>Khóa học C# cơ bản <a href="certificates.html#office" class="cert-link">[Xem chi tiết]</a></div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-year">2024</div>
+                <div>Khóa học lập trình Python <a href="certificates.html#python" class="cert-link">[Xem chi tiết]</a></div>
+            </div>
+        </div>
+
+        <div class="activities">
+            <h3 class="right-section-title">Hoạt động</h3>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>THÀNH VIÊN</div>
+                    <div>2024  -  2025</div>
+                </div>
+                <div>Đại học Nông Lâm TP.HCM</div>
+                <p>Đề tài nghiên cứu khoa học: Thiết kế, lắp đặt và khảo nghiệm bộ điều khiển ổn định tốc độ từ hai nguồn động lực</p>
+            </div>
+        </div>
+
+        <div class="additional">
+            <h3 class="right-section-title">Thông tin thêm</h3>
+            <ul class="additional-info">
+                <li>Đọc hiểu các tài liệu kỹ thuật tiếng Anh</li>
+                <li>Tiếng Anh giao tiếp trung bình</li>
+                <li>Thành thạo tin học văn phòng</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chứng chỉ - Võ Vinh Cơ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            padding: 15px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f7931e;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #333;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 50%;
+        }
+        
+        .header-text h1 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .header-text h2 {
+            color: #f7931e;
+            font-weight: normal;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            color: #f7931e;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .certificate {
+            margin-bottom: 40px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            background-color: #fafafa;
+        }
+        
+        .certificate:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .certificate-header {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+        
+        .certificate-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .certificate-date {
+            color: #777;
+            font-weight: bold;
+        }
+        
+        .certificate-issuer {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        .certificate-desc {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        
+        .certificate-skills {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .skill-badge {
+            background-color: #f7931e;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .certificate-image {
+            margin-top: 20px;
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #f7931e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        
+        .back-btn:hover {
+            background-color: #e57e0d;
+        }
+        
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            header {
+                flex-direction: row;
+                text-align: left;
+            }
+            
+            .profile-img {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+            
+            .certificate-header {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .container {
+                padding: 30px;
+            }
+            
+            body {
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .certificate {
+                padding: 15px;
+            }
+            
+            .certificate-title, .certificate-issuer, .certificate-desc p {
+                font-size: 16px;
+            }
+            
+            .skill-badge {
+                font-size: 13px;
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="image.png" class="profile-img" alt="Võ Vinh Cơ">
+            <div class="header-text">
+                <h1>Võ Vinh Cơ</h1>
+                <h2>Chứng chỉ & Giấy chứng nhận</h2>
+            </div>
+        </header>
+        
+        <div class="section" id="cpp">
+            <h2 class="section-title">Chứng chỉ Lập trình C, C++</h2>
+            <div class="certificate">
+                <div class="certificate-header">
+                    <div class="certificate-title">Khóa học Lập trình C, C++ cho người mới bắt đầu</div>
+                    <div class="certificate-date">2022</div>
+                </div>
+                <div class="certificate-issuer">CodeLearn</div>
+                <div class="certificate-desc">
+                    <p>Hoàn thành khóa học lập trình C và C++ với điểm số xuất sắc. Nội dung khóa học bao gồm nền tảng tính toán, hệ thống nhúng và hệ điều hành, cùng các kiến thức về cấu trúc dữ liệu, giải thuật, lập trình hướng đối tượng và phát triển ứng dụng.</p>
+                </div>
+                <div class="certificate-skills">
+                    <div class="skill-badge">C</div>
+                    <div class="skill-badge">C++</div>
+                    <div class="skill-badge">Calculation platform</div>
+                    <div class="skill-badge">Embedded System</div>
+                    <div class="skill-badge">Operating system</div>
+                </div>
+                <img src="C cho người mới bắt đầu.png" alt="Chứng chỉ C" class="certificate-image">
+                <img src="C++ cho người mới bắt đầu.png" alt="Chứng chỉ C++" class="certificate-image">
+            </div>
+        </div>
+        
+        <div class="section" id="office">
+            <h2 class="section-title">Chứng chỉ C# cơ bản</h2>
+            <div class="certificate">
+                <div class="certificate-header">
+                    <div class="certificate-title">C# cơ bản</div>
+                    <div class="certificate-date">2023</div>
+                </div>
+                <div class="certificate-issuer">CodeLearn</div>
+                <div class="certificate-desc">
+                    <p>Hoàn thành khóa học C# cơ bản trên nền tảng CodeLearn. Khóa học cung cấp kiến thức về lập trình ứng dụng Windows, quản lý thành phần và điều khiển, lập trình web, truy xuất dữ liệu và cấu trúc dữ liệu.</p>
+                </div>
+                <div class="certificate-skills">
+                    <div class="skill-badge">Windows Applications</div>
+                    <div class="skill-badge">Components and Controls</div>
+                    <div class="skill-badge">Web Applications</div>
+                    <div class="skill-badge">Data Access</div>
+                    <div class="skill-badge">Data Structures</div>
+                </div>
+                <img src="Csharp.png" alt="Chứng chỉ C#" class="certificate-image">
+            </div>
+        </div>
+        
+        <div class="section" id="python">
+            <h2 class="section-title">Khóa học lập trình Python</h2>
+            <div class="certificate">
+                <div class="certificate-header">
+                    <div class="certificate-title">Chứng chỉ Python Developer</div>
+                    <div class="certificate-date">2024</div>
+                </div>
+                <div class="certificate-issuer">CodeLearn</div>
+                <div class="certificate-desc">
+                    <p>Hoàn thành khóa học Python toàn diện bao gồm các kiến thức cơ bản đến nâng cao. Được đào tạo về xử lý dữ liệu, phát triển web với Django và Flask, và các kỹ thuật lập trình nâng cao. Đã thực hiện dự án cuối khóa về phát triển ứng dụng IoT sử dụng Python.</p>
+                </div>
+                <div class="certificate-skills">
+                    <div class="skill-badge">Python</div>
+                    <div class="skill-badge">Embedded</div>
+                    <div class="skill-badge">Flask</div>
+                    <div class="skill-badge">Data Analysis</div>
+                    <div class="skill-badge">IoT</div>
+                </div>
+                <img src="Python cơ bản.png" alt="Chứng chỉ Python" class="certificate-image">
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-btn">Quay lại CV</a>
+    </div>
+</body>
+</html>
